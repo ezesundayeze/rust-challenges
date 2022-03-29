@@ -1,5 +1,4 @@
-
-pub fn median_of_an_collection(mut arr: Vec<i32>)->Option<i32>{
+pub fn median_of_an_collection(mut arr: Vec<i32>) -> Option<i32> {
     //sort the collection
     arr.sort();
 
@@ -16,16 +15,16 @@ pub fn median_of_an_collection(mut arr: Vec<i32>)->Option<i32>{
         let median = (arr[left_median] + arr[right_median]) / 2;
         return Some(median);
     }
-    return Some(arr[arr.len() / 2])
+    return Some(arr[arr.len() / 2]);
 }
 
-pub fn find_and_remove_duplicates<T: Ord>(mut arr: Vec<T>)-> Vec<T> {
-        arr.sort();
-        arr.dedup();
-        return arr;
+pub fn find_and_remove_duplicates<T: Ord>(mut arr: Vec<T>) -> Vec<T> {
+    arr.sort();
+    arr.dedup();
+    return arr;
 }
 
-
+//Fibunacci
 pub fn fib(n: usize) -> usize {
     if n == 0 {
         return 0;
