@@ -9,5 +9,7 @@ This project contains lots of Rust Practice exercises. I wrote them for learning
 cargo run
 ```
 
+All exercises are heavily commented.
+
 
     
