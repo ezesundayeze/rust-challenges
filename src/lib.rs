@@ -41,3 +41,22 @@ pub fn fib(n: usize) -> usize {
     }
     return fib(n - 1) + fib(n - 2);
 }
+
+
+// Print a generic text
+pub fn display_any_text <T: std::fmt::Display>(t: T)-> T{
+    return t;
+}
+
+//Bubble sort
+pub fn bubble<T: Ord>(custom_array: &mut [T]) {
+    for n in 0..custom_array.len() {
+        for j in 0..custom_array.len() - 1 - n {
+            if custom_array[j] > custom_array[j + 1] {
+                custom_array.swap(j, j + 1);
+            }
+        }
+    }
+}
+
+

@@ -1,6 +1,8 @@
 use challenges;
 fn main() {
 
+    //Print a generic Text
+    let text = challenges::display_any_text("31231");
     //Find and Remove duplicates
     let unique = challenges::find_and_remove_duplicates(vec![3,3,45,6,8,4,4,4]);
 
@@ -22,4 +24,7 @@ fn main() {
 
     //Test remove duplicate
     assert_eq!(unique, vec![3,4,6,8,45]);
+
+    //Test print generic text
+    assert_eq!(text, "31231");
 }
