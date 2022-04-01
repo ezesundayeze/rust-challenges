@@ -9,6 +9,10 @@ fn main() {
     //Fibunacci sequence
     let fib = challenges::fib(20);
 
+    //Bubble sort
+    let mut custom_collection =  vec![1,3,5,20,4,80,5,8];
+    let bubble_sort = challenges::bubble(&mut custom_collection);
+
     // Median
     let median = challenges::median_of_an_collection(vec![1,45,7,89,97,3]);
     let median2 = challenges::median_of_an_collection(vec![1,45,7,89,97,7,3]);
@@ -27,4 +31,7 @@ fn main() {
 
     //Test print generic text
     assert_eq!(text, "31231");
+
+    // Test Bubble sort
+    assert_eq!(bubble_sort, vec![1,3,4,5,5,8,20,80] )
 }

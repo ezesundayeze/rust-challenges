@@ -49,7 +49,7 @@ pub fn display_any_text <T: std::fmt::Display>(t: T)-> T{
 }
 
 //Bubble sort
-pub fn bubble<T: Ord>(custom_array: &mut [T]) {
+pub fn bubble<T: Ord>(custom_array: &mut [T])-> &mut [T]{
     for n in 0..custom_array.len() {
         for j in 0..custom_array.len() - 1 - n {
             if custom_array[j] > custom_array[j + 1] {
@@ -57,6 +57,7 @@ pub fn bubble<T: Ord>(custom_array: &mut [T]) {
             }
         }
     }
+    return custom_array;
 }
 
 
